@@ -1,4 +1,4 @@
-package com.myprojects.springmvc;
+package com.myprojects.springmvc.repository;
 
 
 import com.myprojects.springmvc.Entity.UserEntity;
@@ -8,5 +8,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserRepository extends CrudRepository<UserEntity,Long> {
     UserEntity findByEmail(String email);
+    UserEntity findByUserId(String userId);
 
 }
+
+
